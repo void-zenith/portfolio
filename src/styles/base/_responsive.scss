@@ -1,0 +1,34 @@
+$screen-phone: 640px;
+$screen-tab: 959px;
+$screen-mid-desktop: 1280px;
+$screen-sm-phone: 480px;
+$screen-mid: 810px;
+$ipad: 1080px;
+
+@function translate-media-conditions($con) {
+  $condMap: (
+    "screen": "only screen",
+    "print": "only print",
+    "phone": "(max-width: #{$screen-phone})",
+    "tab": "(max-width: #{$screen-tab})",
+    "mid-desktop": "(max-width:#{$screen-mid-desktop})",
+    "small-phone": "(max-width:#{$screen-sm-phone})",
+    "mid-screen": "(max-width:#{$screen-mid})",
+    "ipad": "(max-width: #{$ipad})",
+  );
+  @return map-get($condMap, $con);
+}
+
+@mixin media($args...) {
+  $query: "";
+  @each $arg in $args {
+    $op: "";
+    @if ($query != "") {
+      $op: " and ";
+    }
+    $query: $query + $op + translate-media-conditions($arg);
+  }
+  @media #{$query} {
+    @content;
+  }
+}

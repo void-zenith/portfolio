@@ -1,0 +1,70 @@
+.herosection {
+  height: 100vh;
+  position: relative;
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: $dark;
+    opacity: 0.97;
+  }
+  > div {
+    position: relative;
+    z-index: 1;
+    height: inherit;
+  }
+  .hero-textcontainer {
+    width: 60%;
+    .greeting-text {
+      @include typography(15px, #dddcdc, 500, normal);
+      text-transform: uppercase;
+    }
+    h3 {
+      @include typography(60px, #fff, 600, normal);
+    }
+    p {
+      @include typography(18px, #dddcdc, 400, 25px);
+    }
+    > .create-btn {
+      margin-top: 25px;
+      position: relative;
+      overflow: hidden;
+      span {
+        transition: all 0.3s ease-out;
+      }
+      &::after {
+        content: "\f061";
+        font-size: 16px;
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition: all 0.3s ease;
+        font-family: "Font Awesome 5 Free";
+      }
+      &:hover {
+        &::after{
+        opacity: 1;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        span {
+          color: $primary;
+        }
+      }
+    }
+  }
+  .image-container {
+    width: 40%;
+    height: 450px;
+    padding-left: 35px;
+    img {
+      width: 100%;
+      border-radius: 24px;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

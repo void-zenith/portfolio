@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.7.0/css/all.css");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #303841;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Yatra One", cursive;
+}
+
+::-moz-selection {
+  color: #303841;
+  background-color: #00ADB5;
+}
+
+::selection {
+  color: #303841;
+  background-color: #00ADB5;
+}
+
+.zrb-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media only screen and (max-width: 640px) {
+  .zrb-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width:480px) {
+  .zrb-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat 12;
+  grid-gap: 30px;
+}
+
+.colspan-1 {
+  grid-column: span 1;
+}
+
+.rowspan-1 {
+  grid-row: span 1;
+}
+
+.colspan-2 {
+  grid-column: span 2;
+}
+
+.rowspan-2 {
+  grid-row: span 2;
+}
+
+.colspan-3 {
+  grid-column: span 3;
+}
+
+.rowspan-3 {
+  grid-row: span 3;
+}
+
+.colspan-4 {
+  grid-column: span 4;
+}
+
+.rowspan-4 {
+  grid-row: span 4;
+}
+
+.colspan-5 {
+  grid-column: span 5;
+}
+
+.rowspan-5 {
+  grid-row: span 5;
+}
+
+.colspan-6 {
+  grid-column: span 6;
+}
+
+.rowspan-6 {
+  grid-row: span 6;
+}
+
+.colspan-7 {
+  grid-column: span 7;
+}
+
+.rowspan-7 {
+  grid-row: span 7;
+}
+
+.colspan-8 {
+  grid-column: span 8;
+}
+
+.rowspan-8 {
+  grid-row: span 8;
+}
+
+.colspan-9 {
+  grid-column: span 9;
+}
+
+.rowspan-9 {
+  grid-row: span 9;
+}
+
+.colspan-10 {
+  grid-column: span 10;
+}
+
+.rowspan-10 {
+  grid-row: span 10;
+}
+
+.colspan-11 {
+  grid-column: span 11;
+}
+
+.rowspan-11 {
+  grid-row: span 11;
+}
+
+.colspan-12 {
+  grid-column: span 12;
+}
+
+.rowspan-12 {
+  grid-row: span 12;
+}
+
+.cta-btn {
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+.cta-btn svg {
+  display: inline;
+  height: 25px;
+  width: 25px;
+  vertical-align: middle;
+}
+.cta-btn span {
+  display: inline;
+  vertical-align: middle;
+}
+.cta-btn.cta-outline {
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: #00ADB5;
+  color: #00ADB5;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  background-color: transparent;
+}
+.cta-btn.cta-outline:hover {
+  background-color: #00ADB5;
+  color: #fff;
+}
+.cta-btn.cta-primary {
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: #00ADB5;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  background-color: #00ADB5;
+}
+
+.navbar-container {
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+}
+.navbar-container .site-logo {
+  padding: 20px 0;
+}
+.navbar-container .site-logo img {
+  width: 150px;
+}
+.navbar-container .icons-container a {
+  display: block;
+}
+.navbar-container .icons-container svg {
+  font-size: 18px;
+  margin-right: 10px;
+  color: inherit;
+  -webkit-animation: fade-in 0.7s ease forwards;
+          animation: fade-in 0.7s ease forwards;
+}
+.navbar-container .icons-container svg:last-child {
+  margin-right: 0;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.navbaritems-container {
+  position: fixed;
+  bottom: 35px;
+  left: 50%;
+  z-index: 9;
+  transform: translateX(-50%);
+}
+.navbaritems-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  background-color: #00ADB5;
+}
+.navbaritems-container ul li {
+  padding: 15px;
+}
+.navbaritems-container ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.navbaritems-container ul li a span {
+  position: absolute;
+  opacity: 0;
+  font-size: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.herosection {
+  height: 100vh;
+  position: relative;
+}
+.herosection::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  background: #303841;
+  opacity: 0.97;
+}
+.herosection > div {
+  position: relative;
+  z-index: 1;
+  height: inherit;
+}
+.herosection .hero-textcontainer {
+  width: 60%;
+}
+.herosection .hero-textcontainer .greeting-text {
+  font-size: 15px;
+  color: #dddcdc;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.herosection .hero-textcontainer h3 {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 600;
+  line-height: normal;
+}
+.herosection .hero-textcontainer p {
+  font-size: 18px;
+  color: #dddcdc;
+  font-weight: 400;
+  line-height: 25px;
+}
+.herosection .hero-textcontainer > .create-btn {
+  margin-top: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.herosection .hero-textcontainer > .create-btn span {
+  transition: all 0.3s ease-out;
+}
+.herosection .hero-textcontainer > .create-btn::after {
+  content: "\f061";
+  font-size: 16px;
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+  font-family: "Font Awesome 5 Free";
+}
+.herosection .hero-textcontainer > .create-btn:hover::after {
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.herosection .hero-textcontainer > .create-btn:hover span {
+  color: #00ADB5;
+}
+.herosection .image-container {
+  width: 40%;
+  height: 450px;
+  padding-left: 35px;
+}
+.herosection .image-container img {
+  width: 100%;
+  border-radius: 24px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,37 @@
+.cta-btn {
+  display: inline-block;
+  transition: all 0.3s linear;
+  svg{
+    display: inline;
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+  }
+  span{
+    display: inline;
+    vertical-align: middle;
+  }
+  &.cta-outline {
+    &:hover {
+      background-color: $primary;
+      color: #fff;
+    }
+    @include cta-btn(
+      $fontsize: 15px,
+      $fontweight: 900,
+      $padding-x: 25px,
+      $padding-y: 10px
+    );
+  }
+  &.cta-primary {
+    
+    @include cta-btn(
+      $fontsize: 15px,
+      $padding-x: 25px,
+      $padding-y: 10px,
+      $fontweight: 400,
+      $color: #fff,
+      $bg-color: $primary
+    );
+  }
+}
