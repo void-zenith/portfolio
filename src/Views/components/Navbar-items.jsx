@@ -13,7 +13,7 @@ const NavbarItems = () => {
             </a>
           </li>
         ))}
-      </ul>
+      </ul> 
     </div>
   );
 };
