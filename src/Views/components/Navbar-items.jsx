@@ -4,11 +4,11 @@ import { navbaritems } from "./NavbarItems";
 const NavbarItems = () => {
   return (
     <div className="navbaritems-container">
-      <ul>
+      <ul className="flex justify-center items-center">
         {navbaritems.map((items) => (
           <li>
             <a href={`#${items.link}`}>
-              <div className="bottom-nav-img">{items.img}</div>
+              <div className="bottom-nav-img flex justify-center items-center rounded-full">{items.img}</div>
               <span>{items.Label}</span>
             </a>
           </li>

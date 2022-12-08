@@ -16,16 +16,31 @@
     height: inherit;
   }
   .hero-textcontainer {
-    width: 60%;
     .greeting-text {
       @include typography(15px, #dddcdc, 500, normal);
       text-transform: uppercase;
+      @include media("screen", "sm") {
+        & {
+          font-size: 13px;
+        }
+      }
     }
     h3 {
       @include typography(60px, #fff, 600, normal);
+      @include media("screen", "sm") {
+        & {
+          font-size: 35px;
+        }
+      }
     }
     p {
       @include typography(18px, #dddcdc, 400, 25px);
+      @include media("screen", "sm") {
+        & {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
     }
     > .create-btn {
       margin-top: 25px;
@@ -45,8 +60,8 @@
         font-family: "Font Awesome 5 Free";
       }
       &:hover {
-        &::after{
-        opacity: 1;
+        &::after {
+          opacity: 1;
           left: 50%;
           transform: translateX(-50%);
         }
@@ -57,11 +72,23 @@
     }
   }
   .image-container {
-    width: 40%;
     height: 450px;
     padding-left: 35px;
+    @include media("screen", "md") {
+      & {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
     img {
-      width: 100%;
+      margin-left: auto;
+      width: 80%;
+      @include media("screen", "md") {
+        & {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
       border-radius: 24px;
       height: 100%;
       object-fit: cover;

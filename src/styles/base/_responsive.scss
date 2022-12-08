@@ -1,20 +1,20 @@
-$screen-phone: 640px;
-$screen-tab: 959px;
-$screen-mid-desktop: 1280px;
-$screen-sm-phone: 480px;
-$screen-mid: 810px;
-$ipad: 1080px;
+$sm: 640px;
+$md: 768px;
+$lg:1024px;
+$xl: 1280px;
+$vsm: 480px;
+$doublexl :1536px;
 
 @function translate-media-conditions($con) {
   $condMap: (
     "screen": "only screen",
     "print": "only print",
-    "phone": "(max-width: #{$screen-phone})",
-    "tab": "(max-width: #{$screen-tab})",
-    "mid-desktop": "(max-width:#{$screen-mid-desktop})",
-    "small-phone": "(max-width:#{$screen-sm-phone})",
-    "mid-screen": "(max-width:#{$screen-mid})",
-    "ipad": "(max-width: #{$ipad})",
+    "sm": "(max-width: #{$sm})",
+    "md": "(max-width: #{$md})",
+    "xl": "(max-width:#{$xl})",
+    "lg": "(max-width:#{$lg})",
+    "vsm": "(max-width:#{$vsm})",
+    "doublexl": "(max-width: #{$doublexl})",
   );
   @return map-get($condMap, $con);
 }

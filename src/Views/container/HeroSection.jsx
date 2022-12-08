@@ -10,8 +10,8 @@ const HeroSection = () => {
       className="herosection"
       id="herosection"
     >
-      <div className="zrb-container flex justify-between items-center ">
-        <div className="hero-textcontainer">
+      <div className="zrb-container flex md:justify-between items-center flex-wrap ">
+        <div className="hero-textcontainer md:basis-1/2  pt-24 md:pt-8 ">
           <p className="greeting-text">Hey There!👋 I am,</p>
           <h3>Zenith Rajbhandari</h3>
           <p className="hero-content">
@@ -23,7 +23,7 @@ const HeroSection = () => {
             <span>LET’S CREATE SOMETHING SPECIAL</span>
           </a>
         </div>
-        <div className="image-container">
+        <div className="image-container md:basis-1/2">
           <img src={zenith1} alt="" />
         </div>
       </div>

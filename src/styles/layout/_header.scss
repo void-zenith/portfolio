@@ -41,9 +41,6 @@
   z-index: 9;
   transform: translateX(-50%);
   ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 80px;
     padding: 7px;
     background-color: rgb(0 223 233 / 62%);
@@ -63,11 +60,7 @@
           box-shadow: 0 0 3px rgba(255, 255, 255, 0.432);
           height: 40px;
           width: 40px;
-          display: flex;
-          align-items: center;
           transition: all 0.3s ease;
-          justify-content: center;
-          border-radius: 100px;
           svg {
             transition: all 0.3s ease;
             height: 45%;
