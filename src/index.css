@@ -393,6 +393,7 @@ h6 {
   .herosection .image-container {
     width: 100%;
     padding-left: 0;
+    height: 350px;
   }
 }
 .herosection .image-container img {
