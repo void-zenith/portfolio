@@ -1,6 +1,12 @@
 .herosection {
-  height: 100vh;
+  height: 100%;
   position: relative;
+  padding: 150px 0;
+  @include media("screen", "md") {
+    & {
+      padding: 80px 0;
+    }
+  }
   &::after {
     content: " ";
     position: absolute;
@@ -72,13 +78,14 @@
     }
   }
   .image-container {
-    height: 450px;
     padding-left: 35px;
+    height: 450px;
     @include media("screen", "md") {
       & {
         width: 100%;
         padding-left: 0;
         height: 350px;
+        padding-top: 15px;
       }
     }
     img {

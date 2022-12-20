@@ -4,21 +4,24 @@
 
 //base
 @import "./base/responsive";
-@import "./base/global";
 @import "./base//mixin";
-///  
+@import "./base/global";
+///
 
 /// component
 @import "./components/button";
-/// 
+///
 
 /// layout
 @import "./layout/header";
-/// 
+///
 
 ///pages
-@import "./pages/herosection"; 
-/// 
+@import "./pages/herosection";
+@import "./pages/aboutme";
+@import "./pages/skills";
+
+///
 /// utils
 @import "./utils/variables";
-/// 
+///

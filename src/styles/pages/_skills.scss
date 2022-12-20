@@ -1,0 +1,10 @@
+.eachskills{
+    img{
+        width: 85px;
+        @include media("screen", "sm") {
+            & {
+                width: 65px;
+            }
+          }
+    }
+}

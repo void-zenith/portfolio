@@ -11,7 +11,7 @@ const HeroSection = () => {
       id="herosection"
     >
       <div className="zrb-container flex md:justify-between items-center flex-wrap ">
-        <div className="hero-textcontainer md:basis-1/2  pt-24 md:pt-8 ">
+        <div className="hero-textcontainer md:basis-1/2 ">
           <p className="greeting-text">Hey There!👋 I am,</p>
           <h3>Zenith Rajbhandari</h3>
           <p className="hero-content">
