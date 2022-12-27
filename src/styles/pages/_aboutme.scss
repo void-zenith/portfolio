@@ -1,5 +1,11 @@
 .aboutme-section {
   .aboutme-content {
+    padding-right: 35px;
+    @include media("screen", "md") {
+      & {
+        padding-right: 0;
+      }
+    }
     p {
       margin-bottom: 15px;
       &:last-child {

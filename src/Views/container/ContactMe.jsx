@@ -1,4 +1,5 @@
 import React from "react";
+import SocialItems from "./../components/Social-items";
 
 const ContactMe = () => {
   return (
@@ -8,78 +9,44 @@ const ContactMe = () => {
           <h1>
             Let's get in <span>Touch!</span>
           </h1>
+          <SocialItems />
         </div>
         <div className="contactme-container">
           <div className="contactme-form">
             <form action="post">
-              <div class="relative z-0 mb-6 w-full group">
+              <label htmlFor="fullname">
                 <input
                   type="text"
                   name="fullname"
-                  id="fullname"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-trasparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" "
-                  required
+                  placeholder="Enter Your Full name"
                 />
-                <label
-                  for="fullname"
-                  class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                >
-                  Full Name
-                </label>
-              </div>
-              <div class="relative z-0 mb-6 w-full group">
+              </label>
+              <label htmlFor="email">
                 <input
                   type="email"
-                  name="email-ad"
-                  id="fullname"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-trasparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" "
-                  required
+                  name="email"
+                  placeholder="Enter Your Email"
                 />
-                <label
-                  for="email-ad"
-                  class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                >
-                  Email
-                </label>
-              </div>
-              <div class="relative z-0 mb-6 w-full group">
-                <input
-                  type="text"
-                  name="subject"
-                  id="subject"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-trasparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" "
-                  required
-                />
-                <label
-                  for="subject"
-                  class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                >
-                  Subject
-                </label>
-              </div>
-              <div class="relative z-0 mb-6 w-full group">
-                <textarea
-                  name="message"
-                  id="message"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-trasparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" "
-                  required
-                />
-                <label
-                  for="message"
-                  class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                >
-                  Your Message
-                </label>
-              </div>
+              </label>
+              <label htmlFor="suject">
+                <input type="text" name="subject" placeholder="Enter Subject" />
+              </label>
+              <label htmlFor="message">
+                <textarea name="message" placeholder="Enter Your Message" />
+              </label>
               <input type="submit" />
             </form>
           </div>
           <div className="contactme-info">
-            .
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.6592573514554!2d85.33026876104105!3d27.666012127214106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19ddc182f339%3A0xec009106dd012081!2sGwarko%2C%20Lalitpur!5e0!3m2!1sen!2snp!4v1671728179116!5m2!1sen!2snp"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>

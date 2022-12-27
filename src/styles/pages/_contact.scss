@@ -1,0 +1,58 @@
+.contactme-container {
+  display: grid;
+  column-gap: 25px;
+  row-gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  @include media("screen", "md") {
+    & {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  .contactme-form {
+    form {
+      display: grid;
+      label {
+        margin-bottom: 15px;
+      }
+      input[type="submit"] {
+        display: inline-block;
+        width: fit-content;
+        border: none;
+        padding: 12px 18px;
+        background-color: $primary;
+        outline: none;
+        font-family: $karla-font;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 400;
+        cursor: pointer;
+        color: #fff;
+      }
+      input:not([type="submit"]),
+      textarea {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $primary;
+        padding: 7px 11px;
+        color: #fff;
+        font-size: 16px;
+        font-family: $karla-font;
+      }
+      textarea {
+        background-color: #00adb51f;
+        resize: vertical;
+        height: 250px;
+      }
+    }
+  }
+}
+
+.contactme-section{
+  .socialitems-container{
+    ul{
+      justify-content: center;
+    }
+  }
+}

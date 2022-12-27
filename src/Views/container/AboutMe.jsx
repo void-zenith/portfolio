@@ -5,30 +5,23 @@ const AboutMe = () => {
     <section id="aboutme" className="aboutme-section section-t">
       <div className="zrb-container">
         <div className="section-head">
-          <h1>Get To <span>Know Me</span></h1>
+          <h1>
+            Get To <span>Know Me</span>
+          </h1>
         </div>
         <div className="aboutme-container grid grid-cols-1 md:grid-cols-2">
           <div className="aboutme-content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-              doloremque doloribus veniam reiciendis culpa libero impedit.
-              Reprehenderit nisi laborum eaque quia voluptatibus. Iusto soluta
-              neque dolorum saepe! Exercitationem, laborum eveniet? Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Sit doloremque
-              doloribus veniam reiciendis culpa libero impedit. Reprehenderit
-              nisi laborum eaque quia voluptatibus. Iusto soluta neque dolorum
-              saepe! Exercitationem, laborum eveniet?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-              doloremque doloribus veniam reiciendis culpa libero impedit.
-              Reprehenderit nisi laborum eaque quia voluptatibus. Iusto soluta
-              neque dolorum saepe! Exercitationem, laborum eveniet? Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Sit doloremque
-              doloribus veniam reiciendis culpa libero impedit. Reprehenderit
-              nisi laborum eaque quia voluptatibus. Iusto soluta neque dolorum
-              saepe! Exercitationem, laborum eveniet?
-            </p>
+            <p>My name is Zenith Rajbhandari. I'm a Front End Developer based in
+            Kathmandu, Nepal. I describe myself as a passionate developer who
+            loves coding, designing, and developing eye-catching and performant
+            websites. I have been working as a Front End Developer for 1 year.</p>
+
+            <p>Aside from my interest in technology, I am also interested in cars
+            and bikes. I actually wanted to be a mechanical engineer but
+            eventually as I started to learn HTML, CSS and JS. I started to love
+            developing websites and application. In my free time I like to play
+            chess, watch youtube videos, listen to podcasts and musics, and food
+            hunting around kathmadnu valley.</p>
           </div>
           <div className="experience-content">
             <h2>Experience</h2>

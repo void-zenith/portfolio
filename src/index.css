@@ -379,6 +379,14 @@ h6 {
   }
 }
 
+.aboutme-section .aboutme-content {
+  padding-right: 35px;
+}
+@media only screen and (max-width: 768px) {
+  .aboutme-section .aboutme-content {
+    padding-right: 0;
+  }
+}
 .aboutme-section .aboutme-content p {
   margin-bottom: 15px;
   font-size: 17px;
@@ -493,4 +501,60 @@ h6 {
   .eachskills img {
     width: 65px;
   }
+}
+
+.contactme-container {
+  display: grid;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  row-gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media only screen and (max-width: 768px) {
+  .contactme-container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+.contactme-container .contactme-form form {
+  display: grid;
+}
+.contactme-container .contactme-form form label {
+  margin-bottom: 15px;
+}
+.contactme-container .contactme-form form input[type=submit] {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  padding: 12px 18px;
+  background-color: #00ADB5;
+  outline: none;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #fff;
+}
+.contactme-container .contactme-form form input:not([type=submit]),
+.contactme-container .contactme-form form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #00ADB5;
+  padding: 7px 11px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+.contactme-container .contactme-form form textarea {
+  background-color: rgba(0, 173, 181, 0.1215686275);
+  resize: vertical;
+  height: 250px;
+}
+
+.contactme-section .socialitems-container ul {
+  justify-content: center;
 }/*# sourceMappingURL=index.css.map */
