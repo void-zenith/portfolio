@@ -236,6 +236,7 @@ h6 {
 .navbaritems-container ul li:hover span {
   margin-left: 10px;
   font-size: 14px;
+  white-space: nowrap;
   opacity: 1;
 }
 .navbaritems-container ul li a {
