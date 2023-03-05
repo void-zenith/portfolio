@@ -36,6 +36,7 @@ const AboutMe = () => {
                   <p>SCSS</p>
                   <p>JS</p>
                   <p>JQUERY</p>
+                  <p>React JS</p>
                 </div>
                 <div className="date">
                   <GoCalendar />

@@ -5,6 +5,7 @@ import html from "../../Assets/Images/html-5.png";
 import js from "../../Assets/Images/js.png";
 import tailwind from "../../Assets/Images/tailwind.png";
 import sass from "../../Assets/Images/sass.png";
+import  node from "../../Assets/Images/nodejs.png";
 const Skills = () => {
   return (
     <section id="skills" className="skills-section section-t">
@@ -32,6 +33,9 @@ const Skills = () => {
           </div>
           <div className="eachskills basis-1/3 md:basis-1/4 flex justify-center items-center">
             <img src={sass} alt="" />
+          </div>
+          <div className="eachskills basis-1/3 md:basis-1/4 flex justify-center items-center">
+            <img src={node} alt="" />
           </div>
         </div>
       </div>

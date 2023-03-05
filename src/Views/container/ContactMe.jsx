@@ -1,28 +1,38 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import SocialItems from "./../components/Social-items";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
+import ContactForm from "../components/ContactForm";
+import { toast } from "react-toastify";
 const ContactMe = () => {
   const form = useRef();
 
+  const [messageValue, setMessageValues] = useState({
+    user_email: "",
+    user_name: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleMessageValues = (e) => {
+    setMessageValues({ ...messageValue, [e.target.name]: e.target.value });
+  };
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
+    if (
+      messageValue.user_email != "" &&
+      messageValue.user_name != "" &&
+      messageValue.subject != "" &&
+      messageValue.message != ""
+    ) {
+      emailjs.sendForm(
         "service_awxqetc",
         "template_k1v2n5m",
         form.current,
         "3oL0Bb-u3JOIJ6G7o"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-
-        (error) => {
-          console.log(error.text);
-        }
       );
+    } else {
+      toast.error("Please enter all fields before sending message.");
+    }
   };
   return (
     <section id="contactme" className="contactme-section section">
@@ -34,31 +44,11 @@ const ContactMe = () => {
           <SocialItems />
         </div>
         <div className="contactme-container">
-          <div className="contactme-form">
-            <form ref={form} onSubmit={sendEmail}>
-              <label htmlFor="user_name">
-                <input
-                  type="text"
-                  name="user_name"
-                  placeholder="Enter Your Full name"
-                />
-              </label>
-              <label htmlFor="user_email">
-                <input
-                  type="email"
-                  name="user_email"
-                  placeholder="Enter Your Email"
-                />
-              </label>
-              <label htmlFor="suject">
-                <input type="text" name="subject" placeholder="Enter Subject" />
-              </label>
-              <label htmlFor="message">
-                <textarea name="message" placeholder="Enter Your Message" />
-              </label>
-              <input type="submit" value="Send" />
-            </form>
-          </div>
+          <ContactForm
+            form={form}
+            handleMessageValues={handleMessageValues}
+            sendEmail={sendEmail}
+          />
           <div className="contactme-info">
             <iframe
               title="map goolge"
