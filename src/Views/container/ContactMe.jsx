@@ -19,10 +19,10 @@ const ContactMe = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     if (
-      messageValue.user_email != "" &&
-      messageValue.user_name != "" &&
-      messageValue.subject != "" &&
-      messageValue.message != ""
+      messageValue.user_email !== "" &&
+      messageValue.user_name !== "" &&
+      messageValue.subject !== "" &&
+      messageValue.message !== ""
     ) {
       emailjs.sendForm(
         "service_awxqetc",
