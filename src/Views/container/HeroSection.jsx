@@ -1,6 +1,6 @@
 import React from "react";
 import herobg from "../../Assets/Images/hero-bg.png";
-import zenith1 from "../../Assets/Images/zenith-2.jpg";
+import zenith1 from "../../Assets/Images/zenith-2.JPG";
 import SocialItems from "../components/Social-items";
 
 const HeroSection = () => {
