@@ -6,6 +6,10 @@
         padding-right: 0;
       }
     }
+    h2 {
+          @include typography(24px, $secondary, 500, 28px);
+          margin-bottom: 15px;
+        }
     p {
       margin-bottom: 15px;
       &:last-child {

@@ -10,18 +10,15 @@ const AboutMe = () => {
           </h1>
         </div>
         <div className="aboutme-container grid grid-cols-1 md:grid-cols-2">
-          <div className="aboutme-content">
+          <div className="aboutme-content ">
+            <h2>Me, Myself & I</h2>
             <p>My name is Zenith Rajbhandari. I'm a Front End Developer based in
-            Kathmandu, Nepal. I describe myself as a passionate developer who
-            loves coding, designing, and developing eye-catching and performant
-            websites. I have been working as a Front End Developer for 1 year.</p>
+              Kathmandu, Nepal. I describe myself as a passionate developer who
+              loves coding, designing, and developing eye-catching and performant
+              websites. I have been working as a Front End Developer for 1 year.</p>
 
             <p>Aside from my interest in technology, I am also interested in cars
-            and bikes. I actually wanted to be a mechanical engineer but
-            eventually as I started to learn HTML, CSS and JS. I started to love
-            developing websites and application. In my free time I like to play
-            chess, watch youtube videos, listen to podcasts and musics, and food
-            hunting around kathmadnu valley.</p>
+              and bikes. When I am not working you can find me hiking, travelling or trekking to mountains. I also like to try new foods. </p>
           </div>
           <div className="experience-content">
             <h2>Experience</h2>
@@ -41,7 +38,7 @@ const AboutMe = () => {
                 <div className="date">
                   <GoCalendar />
                   <div className="startdate">2022/07/01</div>
-                  <div className="enddate">Present</div>
+                  <div className="enddate">2023/08/30</div>
                 </div>
               </li>
               <li>

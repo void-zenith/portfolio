@@ -28,11 +28,6 @@ h6 {
   font-family: "Yatra One", cursive;
 }
 
-::-moz-selection {
-  color: #303841;
-  background-color: #00ADB5;
-}
-
 ::selection {
   color: #303841;
   background-color: #00ADB5;
@@ -187,20 +182,10 @@ h6 {
   font-size: 18px;
   margin-right: 10px;
   color: inherit;
-  -webkit-animation: fade-in 0.7s ease forwards;
-          animation: fade-in 0.7s ease forwards;
+  animation: fade-in 0.7s ease forwards;
 }
 .navbar-container .icons-container svg:last-child {
   margin-right: 0;
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes fade-in {
@@ -221,8 +206,7 @@ h6 {
 .navbaritems-container ul {
   border-radius: 50px;
   padding: 7px 10px;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   background-color: rgba(0, 223, 233, 0.62);
   transition: all 0.3s ease;
 }
@@ -370,8 +354,7 @@ h6 {
   width: 80%;
   border-radius: 24px;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media only screen and (max-width: 768px) {
   .herosection .image-container img {
@@ -387,6 +370,13 @@ h6 {
   .aboutme-section .aboutme-content {
     padding-right: 0;
   }
+}
+.aboutme-section .aboutme-content h2 {
+  font-size: 24px;
+  color: #EEEEEE;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 15px;
 }
 .aboutme-section .aboutme-content p {
   margin-bottom: 15px;
@@ -506,8 +496,7 @@ h6 {
 
 .contactme-container {
   display: grid;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+  column-gap: 25px;
   row-gap: 20px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -524,8 +513,6 @@ h6 {
 }
 .contactme-container .contactme-form form input[type=submit] {
   display: inline-block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   border: none;
   padding: 12px 18px;
